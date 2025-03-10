@@ -17,6 +17,7 @@ dna2 <- "attattaggaacaca"
 # w is greater than 10
 w > 10
 # "green" is in colors
+print("green" %in% colors)
 # x is greater than y
 x > y
 # Each value in masses is greater than 40.
@@ -199,10 +200,8 @@ height_m
 
 lengths = c(1.1, 2.2, 1.6)
 widths = c(3.5, 2.4, 2.8)
-areas <- rep(widths & lengths, 3)
-for (i in 9:length(areas)) {
+areas <- rep(1:3)
+for (i in areas) {
   areas[i] <- lengths[i] * widths[i]
-  print(areas[1:3])
 }
-areas[1:3]
-
+areas
